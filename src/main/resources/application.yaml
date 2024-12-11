@@ -5,6 +5,10 @@ spring:
   application:
     name: bff
 
+  liquibase:
+    change-log: classpath:/db/changelog/changelog-master.yaml
+    enabled: true
+
   datasource:
     url: jdbc:postgresql://localhost:5432/ecommerce
     username: postgres

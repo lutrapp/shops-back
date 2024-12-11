@@ -1,5 +1,7 @@
 package com.lu_shop.api.dto;
 
-public record ProductResponseDTO(Long id, String name, String description, Double price, Integer stockQuantity, String category, String imageUrl) {}
+import java.math.BigDecimal;
+
+public record ProductResponseDTO(Long id, String name, String description, BigDecimal price, Integer stockQuantity, String category, String imageUrl) {}
 
 
